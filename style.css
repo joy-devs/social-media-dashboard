@@ -1,0 +1,173 @@
+body{
+    background-color: rgb(28, 28, 46);
+}
+
+/* -Very Dark Blue (BG): hsl(230, 17%, 14%)
+- Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%)
+- Dark Desaturated Blue (Card BG): hsl(228, 28%, 20%)
+- Desaturated Blue (Text): hsl(228, 34%, 66%)
+- White (Text): hsl(0, 0%, 100%) */
+
+.container{
+    margin-left: 100px;
+    max-width: 1200px;
+    padding: 20px;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.header_content{
+    display: flex;
+    flex-direction: column;
+}
+header h1{
+    font-size: 28px;
+    margin:0;
+}
+header p{
+    margin: 0;
+    font-size: 16px;
+}
+.flex-container{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    /* justify-content: center;    */
+}
+
+.flex-container > div {
+
+    border: 1px solid rgb(32, 39, 54);
+    width: 280px;
+    height: 200px; 
+    padding: 20px;
+    text-align: center; 
+    border-radius: 8px;
+    background-color: rgb(32, 39, 54);
+    font-size: 14px;
+}
+
+.card-header{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container img{
+    height: 20px;
+    width: 20px;
+    display: inline-flex;
+    padding: 10px;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* justify-content: center; */
+    gap: 20px;
+    font-size: 14px;
+
+}
+.Overview-cards{
+    text-align:center;
+    /* gap: 20px; */
+    /* width: 300px;
+    height: 200px; */
+    border-radius: 8px;
+    background-color: rgb(32, 39, 54);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.overview-header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.overview-header h1{
+    padding-left: 0;
+}
+.overview-body{
+    display: flex;
+    flex-direction: column;
+    column-gap: 50px;
+    margin-top: 20px;
+
+}
+.overview-body p{
+    margin-top: 25px;
+}
+.overview-body img{
+   margin-top:8px ;
+   width: 20px; 
+   height: 20px;
+}
+.overview-h2{
+    margin-top: 40px;
+}
+
+.card.facebook {
+    border-top: 4px solid rgb(53, 53, 178); 
+}
+
+.card.twitter {
+    border-top: 4px solid rgb(29, 161, 242); 
+}
+
+.card.instagram {
+    border-top: 4px solid rgb(225, 48, 108); 
+}
+
+.card.youtube {
+    border-top: 4px solid rgb(255, 0, 0); 
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+} 
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+.positive{
+    color: #4caf50;
+}
+.negative{
+    color: #f44336;
+}
+ 
