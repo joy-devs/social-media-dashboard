@@ -49,7 +49,7 @@ header p{
 .flex-container > div {
 
     border: 1px solid rgb(32, 39, 54);
-    width: 280px;
+    width: 230px;
     height: 200px; 
     padding: 20px;
     text-align: center; 
@@ -81,12 +81,13 @@ header p{
 }
 .Overview-cards{
     text-align:center;
-    /* gap: 20px; */
-    /* width: 300px;
-    height: 200px; */
+    width: 180px;
+    height: 70px;
+    margin: 10px;
     border-radius: 8px;
     background-color: rgb(32, 39, 54);
     padding: 20px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
 }
